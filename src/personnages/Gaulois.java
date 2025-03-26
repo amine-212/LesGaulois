@@ -1,6 +1,7 @@
 package personnages;
 
 import java.security.PublicKey;
+import personnages.Romain;
 
 public class Gaulois {
 	private String nom;
@@ -21,14 +22,33 @@ public class Gaulois {
 	
 	}
 
-	private String prendreParole() {
+	public String prendreParole() {
 		// TODO Auto-generated method stub
 		return "Le gauloius " + nom + " : ";
+	}
+	
+	public void frapper(Romain romain) {
+		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
+		romain.recevoirCoup(force / 3);
+		
 	}
 	
 	
 	
 	
+	
+	public static void main(String[] arg) {
+		
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		
+		System.out.println(asterix);
+	}
+
+	@Override
+	public String toString() {
+		return "\"" + nom + "\"";
+	}
+
 	
 	
 	

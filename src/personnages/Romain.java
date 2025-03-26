@@ -23,4 +23,14 @@ public class Romain {
 		// TODO Auto-generated method stub
 		return "Le romain" + nom + " : ";
 	}
+	
+	
+	
+
+	void recevoirCoup(int forceCoup) {
+		force =forceCoup; 
+		
+		
+	}
+	
 }
